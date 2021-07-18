@@ -1,6 +1,6 @@
 #PyBook
 
-<h3>:construction: Work environment::warning: ATTENTION: valid commands in Windows 10. Other operating systems may need to use other forms of installation:warning: </h3>
+<h3>:construction: Work environment::warning:ATTENTION: valid commands in Windows 10. Other operating systems may need to use other forms of installation:warning: </h3>
 <li> We install <b> Python X.X.X </b> </li>
 <li> We create with: <b> python3 -m venv PyBook-env </b> #It is already created from the repository!! </li>
 <li> Activate with: <b>PyBook-env\Scripts\activate</b> </li>
