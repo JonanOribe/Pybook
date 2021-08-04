@@ -9,6 +9,6 @@
 <h3>:mag_right: Testing </h3>
 <li> We launch the tests with <b> pytest -v </b> </li>
 <h3>:rocket: We launch the project with: </h3>
-<li> <b> py main.py </b> </li>
+<li> <b> python manage.py runserver </b> </li>
 <h3>:chart_with_upwards_trend: Results report </h3>
 <li> Open <b> blablabla </b> in a browser </li>
