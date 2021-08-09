@@ -19,12 +19,11 @@ from PyBook import views as local_views
 from posts import views as post_views
 from django.conf.urls.static import static
 from django.conf import settings
+from users import views as users_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello-world',local_views.server_time),
-    path('numbers',local_views.numbers),
-    path('hi/<str:name>/<int:age>/',local_views.say_hi),
+    path('posts/',post_views.list_posts, name='feed'),
+    path('users/login/',users_views.login_view, name ='login'),
 
-    path('posts/',post_views.list_posts)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
