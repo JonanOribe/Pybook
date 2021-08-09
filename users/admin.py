@@ -22,7 +22,7 @@ class ProfileAdmin(admin.ModelAdmin):
         'user__is_active',
         'user__is_staff'
         )
-    
+
     fieldsets = (
         ('Profile', {
             "fields": (
@@ -36,7 +36,7 @@ class ProfileAdmin(admin.ModelAdmin):
         }),
         ('Extra info', {
             "fields": (
-                    ('website', 'phone_number'), 
+                    ('website', 'phone_number'),
                     ('biography')
             ),
         }),
@@ -46,9 +46,9 @@ class ProfileAdmin(admin.ModelAdmin):
             ),
         })
     )
-    
+
     readonly_fields = ('created', 'modified')
-    
+
 class ProfileInline(admin.StackedInline):
     model = Profile
     can_delete = False

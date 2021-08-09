@@ -25,6 +25,6 @@ urlpatterns = [
     path('hello-world',local_views.server_time),
     path('numbers',local_views.numbers),
     path('hi/<str:name>/<int:age>/',local_views.say_hi),
-    
+
     path('posts/',post_views.list_posts)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
