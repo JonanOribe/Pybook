@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 
 def login_view(request):
     url='users/login.html'
@@ -14,3 +15,8 @@ def login_view(request):
         else:
             return render(request,url,error_dict)
     return render(request,url)
+
+@login_required
+def logout_view(request):
+    logout(request)
+    return redirect('login')
